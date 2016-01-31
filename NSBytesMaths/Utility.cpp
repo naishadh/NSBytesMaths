@@ -15,6 +15,6 @@ Utility::~Utility(void)
 
 int Utility :: Foo()
 {
-	cout << "Foo is printing..."<<endl;
+	cout << "Foo is printing...After batch file introduced..."<<endl;
 	return 0;
 }
