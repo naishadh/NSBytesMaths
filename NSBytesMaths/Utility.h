@@ -10,5 +10,6 @@ public:
 	virtual ~Utility(void);
 
 	int Foo();
+	void foo1();
 };
 

@@ -14,6 +14,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	cout << "Hi from work computer..."<< endl;
 	Utility u ;
 	u.Foo();
+	u.foo1();
 	getchar();
 	return 0;
 }
