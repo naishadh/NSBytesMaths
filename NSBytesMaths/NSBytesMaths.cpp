@@ -9,7 +9,7 @@ using namespace std;
 
 int _tmain(int argc, _TCHAR* argv[])
 {
-	cout << "Hellow world !!!";
+	cout << "Hellow world !!! From home computer";
 	getchar();
 	return 0;
 }
