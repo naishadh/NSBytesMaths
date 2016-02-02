@@ -17,13 +17,28 @@ int _tmain(int argc, _TCHAR* argv[])
 
 	if(emp2 < emp1)
 	{
-		cout << "Salary of " << emp1.GetEmployeeName()<< " is higher than  " << emp2.GetEmployeeName()<< endl;
+		cout << "Salary of " << emp1.GetEmployeeName()<< " <  " << emp2.GetEmployeeName()<< endl;
 	}
-	else
+	if(emp2 > emp1)
 	{
-		cout << "Salary of " << emp2.GetEmployeeName()<< " is higher than  " << emp1.GetEmployeeName()<< endl;
+		cout << "Salary of " << emp2.GetEmployeeName()<< " >  " << emp1.GetEmployeeName()<< endl;
 	}
-
+	if(emp2 = emp1)
+	{
+		cout << "Salary of " << emp2.GetEmployeeName()<< " =  " << emp1.GetEmployeeName()<< endl;
+	}
+	if(emp2 != emp1)
+	{
+		cout << "Salary of " << emp2.GetEmployeeName()<< " !=  " << emp1.GetEmployeeName()<< endl;
+	}
+	if(emp2 >= emp1)
+	{
+		cout << "Salary of " << emp2.GetEmployeeName()<< " >=   " << emp1.GetEmployeeName()<< endl;
+	}
+	if(emp2 <= emp1)
+	{
+		cout << "Salary of " << emp2.GetEmployeeName()<< " <=  " << emp1.GetEmployeeName()<< endl;
+	}
 	/*cout << "Hellow world !!! From home computer"<< endl;
 	cout << "Hi from work computer..."<< endl;
 	Utility u ;

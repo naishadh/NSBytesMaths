@@ -28,3 +28,28 @@ bool Employee :: operator<(Employee &emp)
 {
 	return salary < emp.salary;
 }
+
+bool Employee :: operator<=(Employee &emp)
+{
+	return salary <= emp.salary;
+}
+
+bool  Employee :: operator=(Employee &emp)
+{
+	return salary == emp.salary;
+}
+
+bool  Employee :: operator>(Employee &emp)
+{
+	return salary > emp.salary;
+}
+bool  Employee :: operator>=(Employee &emp)
+{
+	return salary >= emp.salary;
+}
+bool  Employee :: operator!=(Employee &emp)
+{
+	return salary != emp.salary;
+}
+
+

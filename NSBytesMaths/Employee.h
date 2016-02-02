@@ -15,7 +15,12 @@ public:
 	Employee(string firstName,string lastName,float salary);
 	virtual ~Employee(void);
 
+	bool operator>(Employee &emp);
 	bool operator<(Employee &emp);
+	bool operator=(Employee &emp);
+	bool operator >=(Employee &emp);
+	bool operator <=( Employee &emp);
+	bool operator != (Employee &emp);
 
 	string GetEmployeeName();
 };
