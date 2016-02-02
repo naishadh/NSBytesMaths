@@ -65,12 +65,17 @@ Sex: Male, Female (random at creation 50/50)
 color: white, brown, black, spotted
 age : 0-10 (years old)
 Name : randomly chosen at creation from a list of bunny names.
+Bunny father: name of the bunny fathered him/her
+Bunny mother: name of the bunny mothered him/her
+Bunny Sibling : Brothers, sisters
 radioactive_mutant_vampire_bunny: true/false (decided at time of bunny creation 2% chance of true)
 
 At program initialization 5 bunnies must be created and given random colors.
 Each turn afterwards the bunnies age 1 year.
 So long as there is at least one male age 2 or older, for each female bunny in the list age 2 or older;
 a new bunny is created each turn. (i.e. if there was 1 adult male and 3 adult female bunnies, three new bunnies would be born each turn)
+	The new bunny should not be from same blood line. First cousines only prevented.
+	If there is no different bloodline left. Create a brand new bunny.
 New bunnies born should be the same color as their mother.
 If a bunny becomes older than 10 years old, it dies.
 If a radioactive mutant vampire bunny is born then each turn it will change exactly one non radioactive bunny into a radioactive vampire bunny.
