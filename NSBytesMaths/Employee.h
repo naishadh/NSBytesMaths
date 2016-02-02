@@ -14,5 +14,9 @@ public:
 	Employee(void);
 	Employee(string firstName,string lastName,float salary);
 	virtual ~Employee(void);
+
+	bool operator<(Employee &emp);
+
+	string GetEmployeeName();
 };
 
