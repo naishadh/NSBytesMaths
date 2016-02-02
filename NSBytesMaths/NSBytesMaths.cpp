@@ -39,6 +39,11 @@ int _tmain(int argc, _TCHAR* argv[])
 	{
 		cout << "Salary of " << emp2.GetEmployeeName()<< " <=  " << emp1.GetEmployeeName()<< endl;
 	}
+
+	if(1000<emp1 && 10000<emp2)
+	{
+		cout << "Both are earning good. Earn some more...Do something...."<< endl;
+	}
 	/*cout << "Hellow world !!! From home computer"<< endl;
 	cout << "Hi from work computer..."<< endl;
 	Utility u ;

@@ -22,6 +22,8 @@ public:
 	bool operator <=( Employee &emp);
 	bool operator != (Employee &emp);
 
+	friend bool operator<(float m_sal,Employee &emp);
+
 	string GetEmployeeName();
 };
 

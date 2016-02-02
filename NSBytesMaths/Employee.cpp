@@ -53,3 +53,7 @@ bool  Employee :: operator!=(Employee &emp)
 }
 
 
+bool operator<(float m_sal,Employee &emp)
+{
+	return m_sal<emp.salary;
+}
