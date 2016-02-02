@@ -2,6 +2,7 @@
 #include "stdafx.h"
 #include<iostream>
 #include "Utility.h"
+#include "Employee.h"
 
 class Utility
 {
@@ -11,5 +12,6 @@ public:
 
 	int Foo();
 	void foo1();
-};
+
+	};
 

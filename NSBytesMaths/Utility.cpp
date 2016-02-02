@@ -1,6 +1,7 @@
 #include "stdafx.h"
 #include<iostream>
 #include "Utility.h"
+#include "Employee.h"
 
 using namespace std; 
 
@@ -23,3 +24,4 @@ void Utility :: foo1()
 {
 	cout << "Foo1 is printing...After batch file introduced..."<<endl;
 }
+
