@@ -17,12 +17,21 @@ T Max1(T &t1, T &t2)
 int _tmain(int argc, _TCHAR* argv[])
 {
 	
-	Employee  emp1 ("naishadh","shroff",(float)79000.10);
-	Employee emp2 ("prachi","shroff",(float)92000.55);
+	Employee  emp1 ("naishadh","shroff",(float)9000.10);
+	Employee emp2 ("prachi","shroff",(float)7000.55);
 
-	Employee higher = Max1(emp1,emp2);
+	Employee *empl3 = nullptr;
+	empl3 = &emp1;
+
+	cout << "Employee 3 name is  " << empl3->GetEmployeeName()<< endl;
+
+	empl3 = &emp2;
+
+	cout << "Employee 3 name is  " << empl3->GetEmployeeName()<< endl;
+
+	//Employee higher = Max1(emp1,emp2);
 	
-	cout << "Salary of " << higher.GetEmployeeName()<< " is Higher "<< endl;
+	//cout << "Salary of " << higher.GetEmployeeName()<< " is Higher "<< endl;
 
 	/*if(emp2 < emp1)
 	{
