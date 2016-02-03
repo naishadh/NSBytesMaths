@@ -21,13 +21,26 @@ radioactive_mutant_vampire_bunny: true/false (decided at time of bunny creation 
 #include<string>
 
 using namespace std;
+
+enum BunnyGender
+{
+	MALE,FEMALE
+};
+
+enum BunnyColor
+{
+	WHITE,BROWN,BLACK,SPOTTED
+};
+
 class Bunny
 {
 private:
 	int age;
-	bool gender;
+	BunnyGender gender;
 	string name;
-
+	BunnyColor color;
+	bool isMutant;
+	/// Advance pointers to store father, mother, siblling.
 
 public:
 	Bunny(void);
@@ -35,5 +48,20 @@ public:
 
 	void SetAge(int m_age);
 	int GetAge();
+
+	string GetBunnyName();
+	void SetBunnyName(string name);
+
+	void SetColor(BunnyColor bColor);
+	BunnyColor GetColor();
+
+	void SetBunnyMutant(bool mutant);
+	bool GetBunnyMutant();
+
+	void SetBunnyGender(BunnyGender m_Gender);
+	BunnyGender GetBunnyGender();
+	
+
+
 };
 
