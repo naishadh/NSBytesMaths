@@ -48,3 +48,8 @@ string Bunny:: GetBunnyName()
 {
 	return name;
 }
+
+void Bunny :: PrintBunnyObject()
+{
+	cout << " Bunny name " << GetBunnyName()<< " ---- "<<"Bunny Age "<<GetAge()<<endl;
+}

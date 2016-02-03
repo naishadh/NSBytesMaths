@@ -19,6 +19,8 @@ radioactive_mutant_vampire_bunny: true/false (decided at time of bunny creation 
 
 #pragma once
 #include<string>
+#include "stdafx.h"
+#include<iostream>
 
 using namespace std;
 
@@ -61,7 +63,7 @@ public:
 	void SetBunnyGender(BunnyGender m_Gender);
 	BunnyGender GetBunnyGender();
 	
-
+	void PrintBunnyObject();
 
 };
 
