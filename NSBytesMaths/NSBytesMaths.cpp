@@ -17,8 +17,8 @@ T Max1(T &t1, T &t2)
 int _tmain(int argc, _TCHAR* argv[])
 {
 	
-	Employee  emp1 ("naishadh","shroff",(float)9000.10);
-	Employee emp2 ("prachi","shroff",(float)7000.55);
+	Employee  emp1 ("XXX","ZZZ",(float)9000.10);
+	Employee emp2 ("YYY","ZZZ",(float)7000.55);
 
 	Employee *empl3 = nullptr;
 	empl3 = &emp1;
