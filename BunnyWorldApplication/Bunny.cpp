@@ -49,7 +49,22 @@ string Bunny:: GetBunnyName()
 	return name;
 }
 
+void Bunny:: SetBunnyGender(BunnyGender m_Gender)
+{
+	gender = m_Gender;
+}
+
+BunnyGender Bunny :: GetBunnyGender()
+{
+	return gender;
+}
+
+string Bunny:: GetBunnyGenderStr()
+{
+	return gender==BunnyGender::MALE?BunnyMaleGender:BunnyFemaleGender;
+}
+
 void Bunny :: PrintBunnyObject()
 {
-	cout << " Bunny name " << GetBunnyName()<< " ---- "<<"Bunny Age "<<GetAge()<<endl;
+	cout << GetBunnyName()<< " - "<< GetAge() <<" - "<< GetBunnyGenderStr() <<endl;
 }

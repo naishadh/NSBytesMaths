@@ -24,6 +24,8 @@ radioactive_mutant_vampire_bunny: true/false (decided at time of bunny creation 
 
 using namespace std;
 
+static string BunnyMaleGender = "MALE";
+static string BunnyFemaleGender = "FEMALE";
 enum BunnyGender
 {
 	MALE,FEMALE
@@ -62,6 +64,7 @@ public:
 
 	void SetBunnyGender(BunnyGender m_Gender);
 	BunnyGender GetBunnyGender();
+	string GetBunnyGenderStr();
 	
 	void PrintBunnyObject();
 
