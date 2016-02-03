@@ -7,20 +7,36 @@
 #include<iostream>
 #include<chrono>
 
-static unsigned ThreadSleep = 3;
+static unsigned ThreadSleep = 1;
 
 int _tmain(int argc, _TCHAR* argv[])
 {
+	
+
+
 	Bunny b1;
 	b1.SetAge(0);
 	b1.SetBunnyMutant(false);
 	b1.SetColor(BunnyColor::BLACK);
-	b1.SetBunnyName("BunnyName1");
 
-	for (int i=0;i<10;i++)
+	Bunny b2;
+	b2.SetAge(0);
+	b2.SetBunnyMutant(false);
+	b2.SetColor(BunnyColor::BLACK);
+
+	BunnyRandomGenerator random;
+	for (int i=0;i<100;i++)
 	{
-		b1.PrintBunnyObject();
+		/*b1.PrintBunnyObject();
 		b1.SetAge(1+(b1.GetAge()));
+		
+
+		b2.PrintBunnyObject();
+		b2.SetAge(1+(b1.GetAge()));*/
+
+		cout << random.RandomBooleanGenerator() <<endl ;
+		
+
 		this_thread ::sleep_for(chrono::seconds(ThreadSleep));
 		
 	}

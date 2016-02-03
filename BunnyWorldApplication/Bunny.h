@@ -21,6 +21,7 @@ radioactive_mutant_vampire_bunny: true/false (decided at time of bunny creation 
 #include<string>
 #include "stdafx.h"
 #include<iostream>
+#include "BunnyRandomGenerator.h"
 
 using namespace std;
 
@@ -45,6 +46,8 @@ private:
 	BunnyColor color;
 	bool isMutant;
 	/// Advance pointers to store father, mother, siblling.
+
+	BunnyRandomGenerator randGenerator;
 
 public:
 	Bunny(void);

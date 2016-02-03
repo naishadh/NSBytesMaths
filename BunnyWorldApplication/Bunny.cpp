@@ -4,6 +4,9 @@
 
 Bunny::Bunny(void)
 {
+	gender = (BunnyGender) randGenerator.RandomBooleanGenerator();
+	name = "xyz";
+	
 }
 
 
