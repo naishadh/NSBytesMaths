@@ -7,7 +7,7 @@
 #include<iostream>
 #include<chrono>
 
-static unsigned ThreadSleep = 5;
+static unsigned ThreadSleep = 1;
 
 int _tmain(int argc, _TCHAR* argv[])
 {
