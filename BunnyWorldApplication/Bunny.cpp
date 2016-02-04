@@ -6,8 +6,9 @@ Bunny::Bunny(void)
 {
 	gender = (BunnyGender) randGenerator.RandomBooleanGenerator();
 	color = (BunnyColor) randGenerator.RandomIntGenerator();
-	name = "xyz" + to_string(randGenerator.RandomIntGenerator());
+	name = "Bunny" + (randGenerator.RandomStringGenerator());
 	age = (BunnyColor) randGenerator.RandomIntGenerator();
+	isMutant = randGenerator.LessThan2perChance();
 	
 }
 
@@ -95,5 +96,5 @@ string Bunny:: GetBunnyColorStr()
 
 void Bunny :: PrintBunnyObject()
 {
-	cout << GetBunnyName()<< " - "<< GetAge() <<" - "<<GetBunnyColorStr() << " - "<<GetBunnyGenderStr() <<endl;
+	cout << GetBunnyName()<< " - "<< GetAge() <<" - "<<GetBunnyMutant() << " - " <<GetBunnyColorStr() << " - "<<GetBunnyGenderStr() <<endl;
 }

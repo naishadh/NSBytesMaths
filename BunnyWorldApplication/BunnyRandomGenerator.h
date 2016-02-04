@@ -22,5 +22,10 @@ public:
 	bool RandomBooleanGenerator();
 	int RandomIntGenerator();
 	string RandomStringGenerator();
+
+	bool LessThan2perChance();
+
+private:
+	int RandomIntGenerator(int min, int max);
 };
 
