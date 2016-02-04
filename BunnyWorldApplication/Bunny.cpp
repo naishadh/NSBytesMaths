@@ -75,19 +75,20 @@ string Bunny:: GetBunnyColorStr()
 	switch (color)
 	{
 	case WHITE:
-		return bunnycolor=WHITECOLOR;
+		bunnycolor=WHITECOLOR;
 		break;
 	case BROWN:
-		return bunnycolor=BROWNCOLOR;
+		bunnycolor=BROWNCOLOR;
 		break;
 	case BLACK:
-		return bunnycolor=BLACKCOLOR;
+		bunnycolor=BLACKCOLOR;
 		break;
 	case SPOTTED:
-		return bunnycolor=SPOTTEDCOLOR;
+		bunnycolor=SPOTTEDCOLOR;
 		break;
 	default:
-		return bunnycolor=NOCOLOR;
+		bunnycolor=NOCOLOR;
+		break;
 	}
 	return bunnycolor;
 }
