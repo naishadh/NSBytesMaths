@@ -3,7 +3,7 @@
 class LinkedList
 {
 private:
-	Node **head;
+	Node *head;
 	Node *temp;
 	
 public:
@@ -14,5 +14,8 @@ public:
 	void AddNode(Node* addNode);
 	Node* DeleteNode(int data);
 	void PritLinkedList();
+
+private:
+	Node* CreateHeadNode();
 };
 

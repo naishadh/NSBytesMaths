@@ -2,11 +2,14 @@
 #include "LinkedList.h"
 
 
-LinkedList::LinkedList(void)
+LinkedList::LinkedList(void) 
 {
+	//head->SetData(0);
+	//head->SetNextNode(NULL);
 }
 
 
 LinkedList::~LinkedList(void)
 {
 }
+
