@@ -30,8 +30,10 @@ int _tmain(int argc, _TCHAR* argv[])
 	cout << "**c :"<< **c <<endl;
 //
 	LinkedList list;
+	list.AddNode(10);
+	list.AddNode(20);
 	//Node* header = list.CreateHeadNode();
-	//list.PritLinkedList();
+	list.PritLinkedList();
 	
 
 

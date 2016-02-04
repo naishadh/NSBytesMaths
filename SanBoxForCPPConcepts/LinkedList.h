@@ -4,18 +4,14 @@ class LinkedList
 {
 private:
 	Node *head;
-	Node *temp;
-	
+		
 public:
-	LinkedList(void);
+	LinkedList(void){head=nullptr;};
 	~LinkedList(void);
 
-	Node* GetHead();
-	void AddNode(Node* addNode);
-	Node* DeleteNode(int data);
+	void AddNode(int data);
+	void DeleteNode(int data);
 	void PritLinkedList();
 
-private:
-	Node* CreateHeadNode();
 };
 

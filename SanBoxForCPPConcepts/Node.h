@@ -10,12 +10,10 @@ private:
 public:
 	Node(void);
 	~Node(void);
-	Node(Node& newNode);
-	Node (int data,Node& nextNode);
-
+	
 	void SetData(int m_data);
-	void SetNextNode(Node &nextNode);
-
+	void SetNextNode(Node *nextNode);
+	Node* GetNextNode();
 	int GetData();
 };
 
