@@ -1,6 +1,7 @@
 #pragma once
 #include<string>
 #include<cstdlib>
+#include<random>
 
 using namespace std;
 
@@ -11,6 +12,8 @@ private:
 	bool m_BoolNum;
 	int m_IntNum;
 	string m_String;
+	int ColorMaxNum;
+	int colorMinNum;
 	
 public:
 	BunnyRandomGenerator(void);

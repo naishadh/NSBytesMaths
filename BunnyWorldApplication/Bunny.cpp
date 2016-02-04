@@ -5,7 +5,9 @@
 Bunny::Bunny(void)
 {
 	gender = (BunnyGender) randGenerator.RandomBooleanGenerator();
-	name = "xyz";
+	color = (BunnyColor) randGenerator.RandomIntGenerator();
+	name = "xyz" + to_string(randGenerator.RandomIntGenerator());
+	age = (BunnyColor) randGenerator.RandomIntGenerator();
 	
 }
 
@@ -67,7 +69,30 @@ string Bunny:: GetBunnyGenderStr()
 	return gender==BunnyGender::MALE?BunnyMaleGender:BunnyFemaleGender;
 }
 
+string Bunny:: GetBunnyColorStr()
+{
+	string bunnycolor;
+	switch (color)
+	{
+	case WHITE:
+		return bunnycolor=WHITECOLOR;
+		break;
+	case BROWN:
+		return bunnycolor=BROWNCOLOR;
+		break;
+	case BLACK:
+		return bunnycolor=BLACKCOLOR;
+		break;
+	case SPOTTED:
+		return bunnycolor=SPOTTEDCOLOR;
+		break;
+	default:
+		return bunnycolor=NOCOLOR;
+	}
+	return bunnycolor;
+}
+
 void Bunny :: PrintBunnyObject()
 {
-	cout << GetBunnyName()<< " - "<< GetAge() <<" - "<< GetBunnyGenderStr() <<endl;
+	cout << GetBunnyName()<< " - "<< GetAge() <<" - "<<GetBunnyColorStr() << " - "<<GetBunnyGenderStr() <<endl;
 }

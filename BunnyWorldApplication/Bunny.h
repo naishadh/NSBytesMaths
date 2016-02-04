@@ -27,6 +27,12 @@ using namespace std;
 
 static string BunnyMaleGender = "MALE";
 static string BunnyFemaleGender = "FEMALE";
+static string WHITECOLOR = "White";
+static string BROWNCOLOR = "Brown";
+static string BLACKCOLOR = "Black";
+static string SPOTTEDCOLOR = "Spotted";
+static string NOCOLOR = "No Color";
+
 enum BunnyGender
 {
 	MALE,FEMALE
@@ -34,7 +40,7 @@ enum BunnyGender
 
 enum BunnyColor
 {
-	WHITE,BROWN,BLACK,SPOTTED
+	WHITE=1,BROWN,BLACK,SPOTTED
 };
 
 class Bunny
@@ -61,6 +67,7 @@ public:
 
 	void SetColor(BunnyColor bColor);
 	BunnyColor GetColor();
+	string GetBunnyColorStr();
 
 	void SetBunnyMutant(bool mutant);
 	bool GetBunnyMutant();

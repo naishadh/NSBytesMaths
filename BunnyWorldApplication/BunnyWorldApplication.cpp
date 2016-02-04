@@ -34,8 +34,10 @@ int _tmain(int argc, _TCHAR* argv[])
 		b2.PrintBunnyObject();
 		b2.SetAge(1+(b1.GetAge()));*/
 
-		cout << random.RandomBooleanGenerator() <<endl ;
-		
+		Bunny b1;
+
+		b1.PrintBunnyObject();
+				
 
 		this_thread ::sleep_for(chrono::seconds(ThreadSleep));
 		
