@@ -12,6 +12,14 @@ Bunny::Bunny(void)
 	
 }
 
+Bunny::Bunny(Bunny father,Bunny mother): color(mother.color)
+{
+	gender = (BunnyGender) randGenerator.RandomBooleanGenerator();
+	name = "Bunny" + (randGenerator.RandomStringGenerator());
+	age = 0;
+	isMutant = randGenerator.LessThan2perChance();
+	
+}
 
 Bunny::~Bunny(void)
 {

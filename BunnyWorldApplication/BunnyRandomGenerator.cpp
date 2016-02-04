@@ -2,7 +2,7 @@
 #include "BunnyRandomGenerator.h"
 
 
-BunnyRandomGenerator::BunnyRandomGenerator(void) : colorMinNum(0),ColorMaxNum(4)
+BunnyRandomGenerator::BunnyRandomGenerator(void) : colorMinNum(1),ColorMaxNum(4)
 {
 }
 
@@ -18,13 +18,13 @@ bool BunnyRandomGenerator :: RandomBooleanGenerator()
 
 int BunnyRandomGenerator :: RandomIntGenerator()
 {
-		return RandomIntGenerator(1,4);
+		return RandomIntGenerator(colorMinNum,ColorMaxNum);
      
 }
 
 string BunnyRandomGenerator::RandomStringGenerator()
 {
-	int num = RandomIntGenerator(100,999);
+	int num = RandomIntGenerator(H100,H999);
 
 	return to_string(num);
 

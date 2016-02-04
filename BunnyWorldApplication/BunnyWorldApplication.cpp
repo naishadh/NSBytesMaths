@@ -7,7 +7,7 @@
 #include<iostream>
 #include<chrono>
 
-static unsigned ThreadSleep = 1;
+static unsigned ThreadSleep = 5;
 
 int _tmain(int argc, _TCHAR* argv[])
 {
@@ -35,10 +35,18 @@ int _tmain(int argc, _TCHAR* argv[])
 		b2.SetAge(1+(b1.GetAge()));*/
 
 		Bunny b1;
+		Bunny b2;
+		b1.SetBunnyGender(BunnyGender::MALE);
+		b2.SetBunnyGender(BunnyGender::FEMALE);
+		Bunny b3(b1,b2);
 
+
+
+		cout << "----------------------"<<endl;
 		b1.PrintBunnyObject();
-				
-
+		b2.PrintBunnyObject();
+		b3.PrintBunnyObject();
+		cout << "----------------------"<<endl;
 		this_thread ::sleep_for(chrono::seconds(ThreadSleep));
 		
 	}

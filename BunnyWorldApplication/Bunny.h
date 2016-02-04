@@ -57,6 +57,7 @@ private:
 
 public:
 	Bunny(void);
+	Bunny(Bunny father,Bunny mother);
 	~Bunny(void);
 
 	void SetAge(int m_age);

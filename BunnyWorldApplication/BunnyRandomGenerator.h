@@ -6,6 +6,8 @@
 using namespace std;
 
 static const double PROBABILITY = 2.20;
+static const int H100  = 100;
+static const int H999 = 999;
 class BunnyRandomGenerator
 {
 private:
