@@ -4,16 +4,17 @@
 using namespace std;
 class Node
 {
-private:
+public:
 	int data;
 	Node *next;
 public:
 	Node(void);
 	~Node(void);
+	Node::Node(int &m_data) ;
 	
 	void SetData(int m_data);
 	void SetNextNode(Node *nextNode);
-	Node* GetNextNode();
-	int GetData();
+	Node& GetNextNode();
+	int& GetData();
 };
 

@@ -6,35 +6,31 @@
 
 LinkedList::~LinkedList(void)
 {
+	head = new Node();
 }
 
 void LinkedList :: AddNode(int data)
 {
-	Node tempNode ;
-	tempNode.SetData(data);
-	tempNode.SetNextNode(nullptr);
-
-	Node* traverse = head;
-	if(traverse==nullptr)
+	Node *new_student = new	Node(data);//create a new node
+	
+	
+	if (head == NULL)//empty link list
 	{
-		head = &tempNode;
+		head = new_student;
 		return;
 	}
+
 	else
-	if(traverse->GetNextNode() == nullptr)
 	{
-		traverse->SetNextNode( &tempNode);
-	}
-
-	else 
-	{
-		while(traverse->GetNextNode()!=nullptr)
+		
+	Node *temp_node = head;//declares a Node data type to start at root node
+	
+	while (temp_node->next != NULL)//traverses to the end of the link list
 		{
-			traverse = traverse->GetNextNode();
-
+			temp_node = temp_node->next;
 		}
-		traverse->SetNextNode(&tempNode);
 
+	temp_node->next = new_student;
 	}
 	
 
@@ -45,8 +41,8 @@ void LinkedList::PritLinkedList()
 	Node* traverse = head;
 	while (traverse!= nullptr)
 	{
-		cout << "Node: "<< traverse->GetData() <<endl;
-		traverse = traverse->GetNextNode();
+		cout << "Node: "<< traverse->data <<endl;
+		traverse = traverse->next;
 	}
 }
 
