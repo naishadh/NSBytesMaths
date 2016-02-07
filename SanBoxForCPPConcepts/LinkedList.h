@@ -6,7 +6,7 @@ private:
 	Node *head;
 		
 public:
-	LinkedList(void){head=nullptr;};
+	LinkedList(void);
 	~LinkedList(void);
 
 	void AddNode(int data);

@@ -4,18 +4,20 @@
 
 Node::Node(void)
 {
+	next = NULL;
 	
 }
 
 Node::Node(int &m_data) 
 {
 	data = m_data;
-	next = nullptr;
+	next = NULL;
 	
 }
 
 Node::~Node(void)
 {
+	delete next;
 }
 
 
