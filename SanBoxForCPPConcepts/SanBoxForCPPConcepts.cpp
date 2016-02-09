@@ -26,10 +26,10 @@ int _tmain(int argc, _TCHAR* argv[])
 	list.DeleteNode(10);
 	list.PritLinkedList();
 	cout << "======================"<<endl;
-	list.DeleteNode(80);
+	list.DeleteNode(50);
 	list.PritLinkedList();
 	cout << "======================"<<endl;
-	list.DeleteNode(50);
+	list.DeleteNode(80);
 	list.PritLinkedList();
 	}
 

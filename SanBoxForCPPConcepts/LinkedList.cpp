@@ -25,7 +25,7 @@ void LinkedList :: DeleteNode(int data)
 	if(head->data ==data)
 	{
 			head = head->next;
-			//delete temp;	
+			delete temp;	
 	}
 	else
 	{
@@ -75,7 +75,7 @@ void LinkedList :: AddNode(int data)
 void LinkedList::PritLinkedList()
 {
 	Node* traverse = head;
-	while (traverse!= NULL)
+	while (traverse->next!= NULL)
 	{
 		cout << "Node: "<< traverse->data <<endl;
 		traverse = traverse->next;
