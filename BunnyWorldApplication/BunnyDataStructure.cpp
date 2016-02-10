@@ -88,7 +88,7 @@ void BunnyDataStructure::PrintBunnyList()
 	BunnyNode* traverse = head;
 	while (traverse!= NULL)
 	{
-		cout << "Node: "<< traverse->bunny.GetBunnyName() <<endl;
+		 traverse->bunny.PrintBunnyObject();
 		traverse = traverse->next;
 	}
 }
