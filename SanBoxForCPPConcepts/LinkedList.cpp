@@ -20,39 +20,42 @@ void LinkedList :: DeleteNode(int data)
 	Node *delNode = new Node(data);
 	Node *temp = new Node();
 	Node *cur = new Node();
+	Node *old_temp =new Node();                     // create a temporary node
 	temp  = head;
+	old_temp = temp;
 	cur = temp;
 	if(head->data ==data)
 	{
-			                                    // create a temporary node
-temp = new Node();
-temp = head;                   // transfer the address of 'head' to 'temp'
-head = temp->next;      // transfer the address of 'temp->next' to 'head'
-free(temp);
+		// create a temporary node
+		head = temp->next;      // transfer the address of 'temp->next' to 'head'
+		free(temp);
 	}
 	else
 	{
-		 while ( cur!= NULL )
-		 {
-			 if (cur->data == data)
-			 {
-				 temp = cur;
-				 cur = temp->next;
-				 temp->next = cur;
-				 delete temp;
-				 break;
-			 }
-			 cur = cur ->next;
-		 }
-		 
+		while ( temp!= NULL )
+		{
+			if(temp->data ==data)
+			{
+
+
+				old_temp->next = temp->next;  // transfer the address of 'temp1->next' to 'old_temp->next'
+				free(temp);
+				break;
+			}
+			old_temp = temp;                    // store previous node
+			temp = temp->next;                 // store current node
+
+		}
+
+
 	}
-	
+
 }
 void LinkedList :: AddNode(int data)
 {
 	Node *NewNode = new	Node(data);//create a new node
 	NewNode->next = NULL;
-	
+
 	if (head == NULL)//empty link list
 	{
 		head = NewNode;
@@ -61,24 +64,24 @@ void LinkedList :: AddNode(int data)
 
 	else
 	{
-		
-	Node *temp_node = head;//declares a Node data type to start at root node
-	
-	while (temp_node->next != NULL)//traverses to the end of the link list
+
+		Node *temp_node = head;//declares a Node data type to start at root node
+
+		while (temp_node->next != NULL)//traverses to the end of the link list
 		{
 			temp_node = temp_node->next;
 		}
 
-	temp_node->next = NewNode;
+		temp_node->next = NewNode;
 	}
-	
+
 
 }
 
 void LinkedList::PritLinkedList()
 {
 	Node* traverse = head;
-	while (traverse->next!= NULL)
+	while (traverse!= NULL)
 	{
 		cout << "Node: "<< traverse->data <<endl;
 		traverse = traverse->next;

@@ -20,17 +20,17 @@ int _tmain(int argc, _TCHAR* argv[])
 	list.AddNode(70);
 	list.AddNode(80);
 	//Node* header = list.CreateHeadNode();
-	cout << "======================"<<endl;
+	cout << "Printing all ======================"<<endl;
 	list.PritLinkedList();
-	cout << "======================"<<endl;
+	cout << "Deleting 10 ======================"<<endl;
 	list.DeleteNode(10);
 	list.PritLinkedList();
-	/*cout << "======================"<<endl;
+	cout << "Deliting 50 ======================"<<endl;
 	list.DeleteNode(50);
 	list.PritLinkedList();
-	cout << "======================"<<endl;
+	cout << "Deleting 80======================"<<endl;
 	list.DeleteNode(80);
-	list.PritLinkedList();*/
+	list.PritLinkedList();
 	}
 
 
