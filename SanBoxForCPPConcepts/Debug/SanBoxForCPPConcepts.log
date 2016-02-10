@@ -1,4 +1,4 @@
-﻿Build started 2/9/2016 7:28:02 PM.
+﻿Build started 2/9/2016 7:36:39 PM.
      1>Project "C:\Naishadh\MyC++Projects\NSBytesMaths\SanBoxForCPPConcepts\SanBoxForCPPConcepts.vcxproj" on node 3 (Rebuild target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Debug\SanBoxForCPPConcepts.pch" /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
@@ -18,4 +18,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:02.96
+Time Elapsed 00:00:02.62
