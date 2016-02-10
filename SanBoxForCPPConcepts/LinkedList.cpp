@@ -18,14 +18,17 @@ LinkedList::~LinkedList(void)
 void LinkedList :: DeleteNode(int data)
 {
 	Node *delNode = new Node(data);
-	Node *temp = NULL;
-	Node *cur = NULL;
+	Node *temp = new Node();
+	Node *cur = new Node();
 	temp  = head;
 	cur = temp;
 	if(head->data ==data)
 	{
-			head = head->next;
-			delete temp;	
+			                                    // create a temporary node
+temp = new Node();
+temp = head;                   // transfer the address of 'head' to 'temp'
+head = temp->next;      // transfer the address of 'temp->next' to 'head'
+free(temp);
 	}
 	else
 	{

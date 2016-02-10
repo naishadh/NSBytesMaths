@@ -25,12 +25,12 @@ int _tmain(int argc, _TCHAR* argv[])
 	cout << "======================"<<endl;
 	list.DeleteNode(10);
 	list.PritLinkedList();
-	cout << "======================"<<endl;
+	/*cout << "======================"<<endl;
 	list.DeleteNode(50);
 	list.PritLinkedList();
 	cout << "======================"<<endl;
 	list.DeleteNode(80);
-	list.PritLinkedList();
+	list.PritLinkedList();*/
 	}
 
 
