@@ -6,7 +6,7 @@ BunnyDataStructure::BunnyDataStructure(void)
 {
 	head = new BunnyNode();
 	head = NULL;
-	cout<<"Linked list constrcuted...";
+	cout<<"Linked list constrcuted..."<<endl;
 }
 
 
@@ -14,7 +14,7 @@ BunnyDataStructure::~BunnyDataStructure(void)
 {
 	
 	free (head);
-	cout<<"Linked list deleted...";
+	cout<<"Linked list deleted..."<<endl;
 }
 
 
