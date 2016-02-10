@@ -30,7 +30,7 @@
     <ClInclude Include="BunnyRandomGenerator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Node.h">
+    <ClInclude Include="BunnyNode.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -47,7 +47,7 @@
     <ClCompile Include="BunnyRandomGenerator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Node.cpp">
+    <ClCompile Include="BunnyNode.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
