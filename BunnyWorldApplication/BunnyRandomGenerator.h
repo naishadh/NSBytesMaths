@@ -3,6 +3,7 @@
 #include<cstdlib>
 #include<random>
 
+
 using namespace std;
 
 static const double PROBABILITY = 2.20;
