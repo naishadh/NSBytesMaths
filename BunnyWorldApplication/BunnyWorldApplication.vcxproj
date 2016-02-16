@@ -84,6 +84,7 @@
     <ClInclude Include="BunnyDataStructure.h" />
     <ClInclude Include="BunnyRandomGenerator.h" />
     <ClInclude Include="BunnyNode.h" />
+    <ClInclude Include="BunnySociety.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
@@ -91,6 +92,7 @@
     <ClCompile Include="Bunny.cpp" />
     <ClCompile Include="BunnyDataStructure.cpp" />
     <ClCompile Include="BunnyRandomGenerator.cpp" />
+    <ClCompile Include="BunnySociety.cpp" />
     <ClCompile Include="BunnyWorldApplication.cpp" />
     <ClCompile Include="BunnyNode.cpp" />
     <ClCompile Include="stdafx.cpp">
