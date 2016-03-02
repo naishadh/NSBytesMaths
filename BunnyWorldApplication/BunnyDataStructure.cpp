@@ -56,6 +56,33 @@ void BunnyDataStructure :: DeleteBunny(Bunny data)
 	}
 
 }
+int BunnyDataStructure::GetCount()
+{
+	int count = 0;
+	BunnyNode* traverse = head;
+	while (traverse != NULL)
+	{
+		++count;
+		traverse = traverse->next;
+	}
+	return count;
+}
+Bunny BunnyDataStructure::GetBunny(int index)
+{
+	//if (index < 0 && head == nullptr)
+		//return nullptr;
+
+	int count = 0;
+	BunnyNode* traverse = head;
+	while (traverse != NULL)
+	{
+		if (index == count)
+		{
+			return traverse->bunny;
+		}
+		traverse = traverse->next;
+	}
+}
 void BunnyDataStructure :: AddBunny(Bunny data)
 {
 	BunnyNode *NewNode = new	BunnyNode(data);//create a new node

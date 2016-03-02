@@ -104,5 +104,5 @@ string Bunny:: GetBunnyColorStr()
 
 void Bunny :: PrintBunnyObject()
 {
-	cout << GetBunnyName()<< " - "<< GetAge() <<" - "<<GetBunnyMutant() << " - " <<GetBunnyColorStr() << " - "<<GetBunnyGenderStr() <<endl;
+	cout << GetBunnyName()<< "   -   "<< GetAge() <<"   -   "<<GetBunnyMutant() << "   -   " <<GetBunnyColorStr() << "   -   "<<GetBunnyGenderStr() <<endl;
 }

@@ -1,10 +1,2 @@
-﻿  stdafx.cpp
-  BunnyNode.cpp
-  BunnyWorldApplication.cpp
-  BunnySociety.cpp
-  BunnyRandomGenerator.cpp
-c:\naishadh\projects\nsbytesmaths\bunnyworldapplication\bunnyrandomgenerator.cpp(16): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
-  BunnyDataStructure.cpp
-  Bunny.cpp
-  Generating Code...
+﻿  BunnySociety.cpp
   BunnyWorldApplication.vcxproj -> C:\naishadh\Projects\NSBytesMaths\Debug\BunnyWorldApplication.exe

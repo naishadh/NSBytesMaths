@@ -11,6 +11,8 @@ public:
 
 	void AddBunny(Bunny addBunny);
 	void DeleteBunny(Bunny deleteBunny);
+	int GetCount();
+	Bunny GetBunny(int index);
 	void PrintBunnyList();
 };
 

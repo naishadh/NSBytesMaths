@@ -12,5 +12,7 @@ public:
 	virtual ~BunnySociety();
 	bool InitializeBunnySociety();
 	int GetBunnyNumbers();
+	int StartBunnySociety();
+	void BunnySocietyPrint();
 };
 

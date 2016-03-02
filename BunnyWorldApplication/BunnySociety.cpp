@@ -1,6 +1,6 @@
 #include "stdafx.h"
 #include "BunnySociety.h"
-
+#include <thread>
 
 BunnySociety::BunnySociety()
 {
@@ -14,32 +14,11 @@ BunnySociety::~BunnySociety()
 bool BunnySociety::InitializeBunnySociety()
 {
 	
-	for (int i = 0; i < 10; i++)
+	for (int i = 0; i < 5; i++)
 	{
-		/*b1.PrintBunnyObject();
-		b1.SetAge(1+(b1.GetAge()));
-
-
-		b2.PrintBunnyObject();
-		b2.SetAge(1+(b1.GetAge()));*/
-
 		Bunny b1;
-		Bunny b2;
 		b1.SetBunnyGender(BunnyGender::MALE);
-		b2.SetBunnyGender(BunnyGender::FEMALE);
-		Bunny b3(b1, b2);
-
 		bunnyDatastructure.AddBunny(b1);
-		bunnyDatastructure.AddBunny(b2);
-		bunnyDatastructure.AddBunny(b3);
-
-		/*cout << "----------------------"<<endl;
-		b1.PrintBunnyObject();
-		b2.PrintBunnyObject();
-		b3.PrintBunnyObject();
-		cout << "----------------------"<<endl;
-		this_thread ::sleep_for(chrono::seconds(ThreadSleep));*/
-
 	}
 	return false;
 }
@@ -48,4 +27,36 @@ int BunnySociety::GetBunnyNumbers()
 {
 
 	return 0;
+}
+
+int BunnySociety::StartBunnySociety()
+{
+	/// Starting the society printing.
+	BunnySocietyPrint();
+
+	//do
+	{
+		/// First step increase everybody's age.
+
+		for (int i = 0; i < bunnyDatastructure.GetCount(); i++)
+		{
+			Bunny bunny = bunnyDatastructure.GetBunny(i);
+			bunny.SetAge((bunny.GetAge() + 1));
+		}
+
+		//thread(100);
+
+		BunnySocietyPrint();
+
+	} 
+	//while (bunnyDatastructure.GetCount() > 0);
+
+	
+
+	return 0;
+}
+
+void BunnySociety::BunnySocietyPrint()
+{
+	bunnyDatastructure.PrintBunnyList();
 }
