@@ -67,7 +67,7 @@ int BunnyDataStructure::GetCount()
 	}
 	return count;
 }
-Bunny BunnyDataStructure::GetBunny(int index)
+Bunny BunnyDataStructure::GetBunnyONIndex(int index)
 {
 	//if (index < 0 && head == nullptr)
 		//return nullptr;
@@ -80,6 +80,7 @@ Bunny BunnyDataStructure::GetBunny(int index)
 		{
 			return traverse->bunny;
 		}
+		count++;
 		traverse = traverse->next;
 	}
 }

@@ -12,7 +12,7 @@ public:
 	void AddBunny(Bunny addBunny);
 	void DeleteBunny(Bunny deleteBunny);
 	int GetCount();
-	Bunny GetBunny(int index);
+	Bunny GetBunnyONIndex(int index);
 	void PrintBunnyList();
 };
 

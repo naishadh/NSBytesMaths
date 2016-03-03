@@ -7,7 +7,7 @@ Bunny::Bunny(void)
 	gender = (BunnyGender) randGenerator.RandomBooleanGenerator();
 	color = (BunnyColor) randGenerator.RandomIntGenerator();
 	name = "Bunny" + (randGenerator.RandomStringGenerator());
-	age = (BunnyColor) randGenerator.RandomIntGenerator();
+	age =  randGenerator.RandomIntGenerator(0,100);
 	isMutant = randGenerator.LessThan2perChance();
 	
 }
