@@ -1,12 +1,9 @@
-﻿  Bunny.cpp
+﻿  DataStructureController.cpp
+  BunnySociety.cpp
+c:\naishadh\projects\nsbytesmaths\bunnyworldapplication\bunnysociety.cpp(69): error C2660: 'BunnyDataStructure::GetNextBunny': function does not take 0 arguments
+c:\naishadh\projects\nsbytesmaths\bunnyworldapplication\bunnysociety.cpp(69): error C2065: 'null': undeclared identifier
+  BunnyDataStructure.cpp
   Generating Code...
-  Compiling...
-  BunnyRandomGenerator.cpp
-c:\naishadh\projects\nsbytesmaths\bunnyworldapplication\bunnyrandomgenerator.cpp(16): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
-  Generating Code...
+c:\naishadh\projects\nsbytesmaths\bunnyworldapplication\bunnydatastructure.cpp(86): warning C4715: 'BunnyDataStructure::GetBunnyONIndex': not all control paths return a value
   Skipping... (no relevant changes detected)
   BunnyWorldApplication.cpp
-  BunnySociety.cpp
-  BunnyNode.cpp
-  BunnyDataStructure.cpp
-  BunnyWorldApplication.vcxproj -> C:\naishadh\Projects\NSBytesMaths\Debug\BunnyWorldApplication.exe

@@ -85,6 +85,7 @@
     <ClInclude Include="BunnyRandomGenerator.h" />
     <ClInclude Include="BunnyNode.h" />
     <ClInclude Include="BunnySociety.h" />
+    <ClInclude Include="DataStructureController.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
@@ -95,6 +96,7 @@
     <ClCompile Include="BunnySociety.cpp" />
     <ClCompile Include="BunnyWorldApplication.cpp" />
     <ClCompile Include="BunnyNode.cpp" />
+    <ClCompile Include="DataStructureController.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>

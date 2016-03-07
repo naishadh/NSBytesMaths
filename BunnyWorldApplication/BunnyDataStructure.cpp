@@ -120,3 +120,13 @@ void BunnyDataStructure::PrintBunnyList()
 		traverse = traverse->next;
 	}
 }
+
+BunnyNode* BunnyDataStructure::GetNextBunny(BunnyNode* curBunny)
+{
+	if (curBunny == nullptr)
+		return nullptr;
+	else return curBunny->next;
+	
+}
+
+

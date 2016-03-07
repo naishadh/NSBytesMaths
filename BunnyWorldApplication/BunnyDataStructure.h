@@ -14,5 +14,6 @@ public:
 	int GetCount();
 	Bunny GetBunnyONIndex(int index);
 	void PrintBunnyList();
+	BunnyNode* GetNextBunny(BunnyNode* curBunny);
 };
 
